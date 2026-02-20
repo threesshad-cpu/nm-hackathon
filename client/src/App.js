@@ -72,6 +72,14 @@ const EdiiTnLogo = ({ size = 32 }) => (
   </svg>
 );
 
+const statusColors = {
+  "Idle": "#64748b",
+  "Working": "#3b82f6",
+  "Charging": "#10b981",
+  "DEADLOCK": "#ef4444",
+  "SERVICE INTERCEPT": "#D4AF37"
+};
+
 function App() {
   const [data, setData] = useState({
     grid: [], robots: [], taskHistory: [], autopilotActive: true,
