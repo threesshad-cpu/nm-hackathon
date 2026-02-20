@@ -159,25 +159,6 @@ function App() {
     return mapping[name] || name;
   };
 
-  const getGoodName = (t) => {
-    if (t === "RAW_MATERIAL") return "PDS Rice / Wheat";
-    if (t === "WIP") return "Essential Commodities";
-    if (t === "FINISHED_GOOD") return "Sealed Ration Units";
-    return "State Supply";
-  };
-
-  const getCommodityBadgeClass = (t) => {
-    if (t === "RAW_MATERIAL") return "commodity-badge raw";
-    if (t === "WIP") return "commodity-badge wip";
-    if (t === "FINISHED_GOOD") return "commodity-badge finished";
-    return "commodity-badge";
-  };
-
-  const statusColors = {
-    "Idle": "#64748b", "Working": "#3b82f6", "Charging": "#10b981",
-    "DEADLOCK": "#ef4444", "SERVICE INTERCEPT": "#D4AF37"
-  };
-
   return (
     <div className="app-container">
 
