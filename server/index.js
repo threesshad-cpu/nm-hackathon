@@ -999,4 +999,5 @@ setInterval(() => {
 
 
 
-server.listen(3001, () => { console.log('✅ TN SOVEREIGN LOGISTICS TWIN V9.0 — CIVIL SUPPLIES READY'); }); 
+const PORT = process.env.PORT || 3001;
+server.listen(PORT, () => { console.log(`✅ TN SOVEREIGN LOGISTICS TWIN V9.0 — CIVIL SUPPLIES READY on port ${PORT}`); });
